@@ -1,0 +1,29 @@
+{
+  "name": "SauveApp",
+  "version": "0.0.1",
+  "description": "A base application for further development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MrJangoBox/compback"
+  },
+  "author": "MrJangoBox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrJangoBox/compback/issues"
+  },
+  "engines": {
+    "node": "0.10.26"
+  },
+  "homepage": "https://github.com/MrJangoBox/compback",
+  "dependencies": {
+    "morgan": "^1.6.1",
+    "bcrypt": "^0.8.5",
+    "restify": "^4.0.3",
+    "mongojs": "^1.4.0",
+    "forever": "^0.15.1"
+  }
+}

@@ -1,0 +1,31 @@
+<ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
+   <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
+       <div class="item item-divider title-center">
+           Categorie: {{category}}
+       </div>
+
+    <br />
+<!--       <div>Topics List</div>-->
+    
+    <ion-list>
+        <ion-item 
+            ng-repeat="item in topicList"
+            ng-class="icon ion-ios7-arrow-forward"
+            ng-click="selectTopic('{{item.topic}}','{{item.content}}')">
+            {{item.topic}}
+<!--            <i icon-right ng-class="icon ion-ios7-arrow-forward"></i>-->
+        </ion-item>
+    </ion-list>  
+
+       <div class="card" >
+          <div class="item item-text-wrap" ng-show="noData || incomplete">
+             <span ng-show="incomplete">
+             This File has no content yet!!
+             </span>
+             <span ng-show="noData">
+             This file has no content at all.
+             </span>
+          </div>
+       </div>
+    </ion-content>
+</ion-view>

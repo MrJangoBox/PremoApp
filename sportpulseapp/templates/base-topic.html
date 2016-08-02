@@ -1,0 +1,22 @@
+<ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
+   <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
+       <div class="item item-divider title-center">
+           Sujet: {{topic}}
+       </div>
+
+       <br />
+    
+       <div ng-bind-html="topicContent"></div>
+
+       <div class="card" >
+          <div class="item item-text-wrap" ng-show="noData || incomplete">
+             <span ng-show="incomplete">
+             This File has no content yet!!
+             </span>
+             <span ng-show="noData">
+             This file has no content at all.
+             </span>
+          </div>
+       </div>
+    </ion-content>
+</ion-view>

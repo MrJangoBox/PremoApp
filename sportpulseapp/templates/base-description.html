@@ -1,0 +1,24 @@
+<ion-header-bar class="bar-positive">
+   <button class="button button-clear" ng-click="logout()">Logout</button>
+</ion-header-bar>
+<ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
+<!--
+<div class="item item-divider title-center">
+   Agent: {{currentAgentName}}
+</div>
+-->
+
+   <br />
+   <div>{{descriptionLink}}</div>
+
+    <div class="card" >
+        <div class="item item-text-wrap" ng-show="noData || incomplete">
+            <span ng-show="incomplete">
+                This file has no content yet!!
+            </span>
+            <span ng-show="noData">
+                This file has no content at all.
+            </span>
+        </div>
+    </div>
+</ion-content>
