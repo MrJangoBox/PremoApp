@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.sauveApp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Sport Pulse</name>
+<widget id="com.premoapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Premo</name>
     <description>
         Une application experimentale contenant de vielles techniques de premiers soins. Utilization garde a la discretion de l'utilisateur. 
     </description>

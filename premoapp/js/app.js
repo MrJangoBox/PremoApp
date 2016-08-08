@@ -1,4 +1,4 @@
-angular.module('sauveApp', ['ionic', 'sauveApp.controllers', 'sauveApp.services'])
+angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services'])
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {

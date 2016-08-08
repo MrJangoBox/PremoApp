@@ -8,7 +8,7 @@ module.exports = function (server, db) {
         unique: true
     })
  
-    server.post('/api/v1/sauveApp/auth/register', function (req, res, next) {
+    server.post('/api/v1/premoApp/auth/register', function (req, res, next) {
         var user = req.params;
         pwdMgr.cryptPassword(user.password, function (err, hash) {
             user.password = hash;
@@ -37,7 +37,7 @@ module.exports = function (server, db) {
         return next();
     });
  
-    server.post('/api/v1/sauveApp/auth/login', function (req, res, next) {
+    server.post('/api/v1/premoApp/auth/login', function (req, res, next) {
         var user = req.params;
 
         console.log("WAZZA", req.params.email)

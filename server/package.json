@@ -1,5 +1,5 @@
 {
-  "name": "SauveApp",
+  "name": "PremoApp",
   "version": "0.0.1",
   "description": "A base application for further development",
   "main": "index.html",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MrJangoBox/compback"
+    "url": "git://github.com/PremoApp/premoappdb"
   },
   "author": "MrJangoBox",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrJangoBox/compback/issues"
+    "url": "https://github.com/PremoApp/premoappdb/issues"
   },
   "engines": {
     "node": "0.10.26"
   },
-  "homepage": "https://github.com/MrJangoBox/compback",
+  "homepage": "https://github.com/PremoApp/premoappdb",
   "dependencies": {
     "morgan": "^1.6.1",
     "bcrypt": "^0.8.5",

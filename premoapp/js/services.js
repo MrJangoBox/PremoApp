@@ -1,4 +1,4 @@
-angular.module('sauveApp.services', [])
+angular.module('premoApp.services', [])
 
 .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
 
@@ -57,13 +57,13 @@ angular.module('sauveApp.services', [])
 
     return {
         signin: function (form) {
-            return $http.post(base+'/api/v1/sauveApp/auth/login', form);
+            return $http.post(base+'/api/v1/premoApp/auth/login', form);
         },
         signup: function (form) {
-            return $http.post(base+'/api/v1/sauveApp/auth/register', form);
+            return $http.post(base+'/api/v1/premoApp/auth/register', form);
         },
         getAll: function (email) {
-            return $http.get(base+'/api/v1/sauveApp/data/list', {
+            return $http.get(base+'/api/v1/premoApp/data/list', {
                 method: 'GET',
                 params: {
                     token: email
@@ -71,7 +71,7 @@ angular.module('sauveApp.services', [])
             });
         },
         getAllTopics: function (email, category) {
-            return $http.get(base+'/api/v1/sauveApp/data/topicList', {
+            return $http.get(base+'/api/v1/premoApp/data/topicList', {
                 method: 'GET',
                 params: {
                     token: email,

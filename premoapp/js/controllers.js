@@ -1,8 +1,8 @@
-angular.module('sauveApp.controllers', ['sauveApp.services'])
+angular.module('premoApp.controllers', ['premoApp.services'])
  
 // Sign in controller
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
-    // if the user is already logged in, take him to his SauveApp app
+    // if the user is already logged in, take him to his PremoApp app
     if ($rootScope.isSessionActive()) {
         $window.location.href = ('#/base/list');
     }
