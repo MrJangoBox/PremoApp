@@ -3,10 +3,10 @@ angular.module('sauveApp.services', [])
 .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
 
     // For local development
-    //  var base = "http://localhost:9804";
+     var base = "http://localhost:9804";
 
     // For online development
-      var base = "http://sportpulse.herokuapp.com";
+    //   var base = "http://sportpulse.herokuapp.com";
     
     $rootScope.show = function (text) {
         $rootScope.loading = $ionicLoading.show({

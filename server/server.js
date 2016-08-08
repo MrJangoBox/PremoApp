@@ -4,8 +4,8 @@ var morgan      =   require('morgan');
 
 // Connection to DB: 1) Internal Mongo db, 2) External MongoLab db
 //var db  =   mongojs('sauveApp', ['appUsers','sauveAppLists']);
-//var db  =   mongojs('mongodb://admin:password@ds053390.mongolab.com:53390/sauveapp', ['appUsers','sauveAppLists'], {authMechanism: 'ScramSHA1'});
-var db  =   mongojs('mongodb://admin:password@ds041150.mongolab.com:41150/compback', ['appUsers','sauveAppLists'], {authMechanism: 'ScramSHA1'});
+
+var db  =   mongojs('mongodb://admin:password@ds145405.mlab.com:45405/premoappdb', ['appUsers','sauveAppLists'], {authMechanism: 'ScramSHA1'});
 
 //console.log("WAZZA", db)
 
