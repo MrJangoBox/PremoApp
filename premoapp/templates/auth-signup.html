@@ -4,25 +4,29 @@
 <ion-content class="has-header padding">
    <div class="list">
       <label class="item item-input">
-      <span class="input-label">First Name</span>
-      <input type="text" ng-model="user.firstName">
+         <span class="input-label">First Name</span>
+         <input type="text" ng-model="user.firstName">
       </label>
       <label class="item item-input">
-      <span class="input-label">Last Name</span>
-      <input type="text" ng-model="user.LastName">
+         <span class="input-label">Last Name</span>
+         <input type="text" ng-model="user.LastName">
       </label>
       <label class="item item-input">
-      <span class="input-label">Email</span>
-      <input type="text" ng-model="user.email">
+         <span class="input-label">Email</span>
+         <input type="text" ng-model="user.email">
       </label>
       <label class="item item-input">
-      <span class="input-label">Password</span>
-      <input type="password" ng-model="user.password">
+         <span class="input-label">Password</span>
+         <input type="password" ng-model="user.password">
       </label>
       <label class="item item-input">
-      <button class="button button-block button-positive" ng-click="createUser()">
-      Sign Up
-      </button>
+         <span class="input-label">Confirm Password</span>
+         <input type="password" ng-model="user.passwordConf">
+      </label>
+      <label class="item item-input">
+         <button class="button button-block button-positive" ng-click="createUser()">
+            Sign Up
+         </button>
       </label>
    </div>
 </ion-content>

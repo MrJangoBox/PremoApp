@@ -20,6 +20,8 @@ angular.module('premoApp.controllers', ['premoApp.services'])
         var email = this.user.email;
         var password = this.user.password;
         if(!email || !password) {
+            // console.log(password);
+            // console.log(passwordConfirmation);
             $rootScope.notify("Please enter valid credentials");
             return false;
         }
@@ -44,6 +46,7 @@ angular.module('premoApp.controllers', ['premoApp.services'])
     $scope.user = {
         email: "",
         password: "",
+        passwordConf: "",
         firstName: "",
         lastName: ""
     };
@@ -55,9 +58,10 @@ angular.module('premoApp.controllers', ['premoApp.services'])
     $scope.createUser = function () {
         var email = this.user.email;
         var password = this.user.password;
+        var passwordConfirmation =  this.user.passwordConf;
         var uFirstName = this.user.firstName;
         var uLastName = this.user.lastName;
-        if(!email || !password || !uFirstName || uLastName) {
+        if(!email || !password || !uFirstName || uLastName || password != passwordConfirmation) {
             $rootScope.notify("Please enter valid data");
             return false;
         }

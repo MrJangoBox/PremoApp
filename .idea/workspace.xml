@@ -2,111 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6e3cc0-80ce-461d-9c67-0b1876769665" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/DatabasePopulationCommands.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Contents.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-40@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-40@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-60@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-76@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-Small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-Small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/AppIcon.appiconset/Icon-Small@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon-60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon-72@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon-Small-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon-Small-50@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/Icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/iTunesArtwork.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/Icons/iTunesArtwork@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/img/Default@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/img/Default@2x.xcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/img/Icon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/img/Icon-60@2x.xcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/js/controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/js/services.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/css/ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/css/ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/fonts/ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/fonts/ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular-ui/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular-ui/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/ionic-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/ionic-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/ionic.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/ionic.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/ionic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/js/ionic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_action-sheet.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_backdrop.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_badge.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_button-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_button.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_checkbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_form.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_items.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_platform.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_radio.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_slide-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_split-pane.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_toggle.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_util.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/ionic.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/ionicons/_ionicons-animation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/ionicons/_ionicons-font.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/ionicons/_ionicons-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/ionicons/_ionicons-variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/scss/ionicons/ionicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/lib/ionic/version.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/node_modules/notifyjs/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/node_modules/notifyjs/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/node_modules/notifyjs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/node_modules/notifyjs/dist/notify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/node_modules/notifyjs/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/auth-signin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/auth-signup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/auth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/base-category.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/base-description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/base-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/base-topic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sportpulseapp/templates/base.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/premoapp/index.html" afterPath="$PROJECT_DIR$/premoapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/premoapp/js/controllers.js" afterPath="$PROJECT_DIR$/premoapp/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/premoapp/templates/auth-signup.html" afterPath="$PROJECT_DIR$/premoapp/templates/auth-signup.html" />
     </list>
     <ignored path="SauveApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -127,11 +26,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/premoapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth-signin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/premoapp/templates/auth-signin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/premoapp/templates/auth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth-signup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/premoapp/templates/auth-signup.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/premoapp/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -150,8 +89,8 @@
       <file leaf-file-name="managePremoAppList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/premoAppList/managePremoAppList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -182,7 +121,6 @@
         <option value="$PROJECT_DIR$/sportpulseapp/js/services.js" />
         <option value="$PROJECT_DIR$/premoapp/config.xml" />
         <option value="$PROJECT_DIR$/premoapp/js/app.js" />
-        <option value="$PROJECT_DIR$/premoapp/js/controllers.js" />
         <option value="$PROJECT_DIR$/server/sauveAppList/manageSauveAppList.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/package.json" />
@@ -190,6 +128,8 @@
         <option value="$PROJECT_DIR$/server/auth/manageUser.js" />
         <option value="$PROJECT_DIR$/server/premoAppList/manageSauveAppList.js" />
         <option value="$PROJECT_DIR$/premoapp/js/services.js" />
+        <option value="$PROJECT_DIR$/premoapp/templates/auth-signup.html" />
+        <option value="$PROJECT_DIR$/premoapp/js/controllers.js" />
         <option value="$PROJECT_DIR$/premoapp/index.html" />
       </list>
     </option>
@@ -200,9 +140,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1443" />
+    <option name="x" value="1440" />
     <option name="y" value="-237" />
-    <option name="width" value="1487" />
+    <option name="width" value="1521" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -230,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -354,7 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,18 +411,21 @@
       <workItem from="1470079717638" duration="1182000" />
       <workItem from="1470083915956" duration="1158000" />
       <workItem from="1470624453819" duration="2370000" />
-      <workItem from="1470660919153" duration="1828000" />
+      <workItem from="1470660919153" duration="3278000" />
+      <workItem from="1470665555728" duration="575000" />
+      <workItem from="1470682512393" duration="15000" />
+      <workItem from="1470762463699" duration="1773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16028000" />
+    <option name="totallyTimeSpent" value="19841000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1443" y="-237" width="1487" height="1053" extended-state="0" />
+    <frame x="1440" y="-237" width="1521" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1766712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12466667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -699,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,43 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/premoapp/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2109">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/premoapp/templates/auth-signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/premoapp/templates/auth-signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/premoapp/templates/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/premoapp/templates/base-category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,15 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/premoAppList/managePremoAppList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,10 +739,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/premoapp/index.html">
+    <entry file="file://$PROJECT_DIR$/server/premoAppList/managePremoAppList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/premoapp/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/premoapp/templates/auth-signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/premoapp/templates/auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/premoapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/premoapp/templates/auth-signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding />
         </state>
       </provider>
