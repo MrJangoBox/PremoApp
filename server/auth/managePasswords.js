@@ -1,5 +1,5 @@
 /** http://stackoverflow.com/a/14015883/1015046 **/
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
  
 module.exports.cryptPassword = function (password, callback) {
     bcrypt.genSalt(10, function (err, salt) {
