@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.premoapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Premo</name>
+    <description>
+        Une application experimentale contenant de vielles techniques de premiers soins. Utilization garde a la discretion de l'utilisateur. 
+    </description>
+    <author email="oleksandr.dymov@gmail.com">
+      Author
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="phonegap-version" value="6.2.2" />
+    
+
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+
+    <!--<gap:splash src="img/Default@2x.png" gap:platform="ios" width="640" height="960" />-->
+    <!--<gap:splash src="img/Default@2x.png" gap:platform="ios" width="750" height="1334" />-->
+    <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
+        <true/>
+    </gap:config-file>
+        <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+        <false/>
+    </gap:config-file>
+    
+    <icon src="img/Icon-60@2x.png" />
+    
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+    </feature>
+
+    <feature name="StatusBar">
+      <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+</widget>

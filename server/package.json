@@ -22,7 +22,7 @@
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "forever": "^0.15.1",
-    "mongojs": "^1.4.0",
+    "mongojs": "^1.4.1",
     "morgan": "^1.6.1",
     "restify": "^4.0.3"
   }
