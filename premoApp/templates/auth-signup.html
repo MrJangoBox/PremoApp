@@ -2,6 +2,17 @@
    <h1 class="title">Register</h1>
 </ion-header-bar>
 <ion-content class="has-header padding">
+   <growl-notification ng-if="emptySignupCredit" ttl="100000">
+      Please enter valid credentials
+   </growl-notification>
+   <growl-notification ng-if="existingEmail">
+      A user with this email already exists
+      <a ng-click="$growlNotification.remove()">Close me</a>
+   </growl-notification>
+   <growl-notification ng-if="communicationError">
+      Oops something went wrong, Please try again!
+      <a href="#" ng-click="$growlNotification.remove()">Close me</a>
+   </growl-notification>
    <div class="list">
       <label class="item item-input">
          <span class="input-label">First Name</span>

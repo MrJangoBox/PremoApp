@@ -18,3 +18,20 @@
 {
     margin-right: 35px;
 }
+
+growl-notifications {
+    position: fixed;
+    top: 100px;
+    right: 400px;
+    z-index: 1000;
+}
+
+growl-notifications growl-notification {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px 30px;
+    width: 80%;
+    display: block;
+    border-radius: 5px;
+    margin-top: 15px;
+}

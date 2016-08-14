@@ -16,5 +16,12 @@
       Sign In
       </button>
       </label>
+      <growl-notification ng-if="userNoMatch">
+         Invalid Username or password
+         <a href="#" ng-click="$growlNotification.remove()">Close me</a>
+      </growl-notification>
+      <growl-notification ng-if="emptyLoginCredit" ttl="100000">
+         Please enter valid credentials
+      </growl-notification>
    </div>
 </ion-content>

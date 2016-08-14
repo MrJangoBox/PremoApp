@@ -1,4 +1,4 @@
-angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services'])
+angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services', 'growlNotifications'])
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {

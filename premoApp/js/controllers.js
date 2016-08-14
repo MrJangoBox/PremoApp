@@ -17,15 +17,14 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             };
     
     $scope.validateUser = function () {
+        $rootScope.userNoMatch = false;
+        $rootScope.emptyLoginCredit = false;
         var email = this.user.email;
         var password = this.user.password;
         if(!email || !password) {
-            // console.log(password);
-            // console.log(passwordConfirmation);
-            $rootScope.notify("Please enter valid credentials");
+            $rootScope.emptyLoginCredit = true;
             return false;
         }
-        $rootScope.show('Please wait.. Authenticating');
         API.signin({
             email: email,
             password: password
@@ -34,8 +33,8 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             $rootScope.hide();
             $window.location.href = ('#/base/list');
         }).error(function (error) {
+            $rootScope.userNoMatch = true;
             $rootScope.hide();
-            $rootScope.notify("Invalid Username or password");
         });
     }
  
@@ -56,15 +55,19 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             };
  
     $scope.createUser = function () {
+        $rootScope.emptySignupCredit = false;
+        $rootScope.existingEmail = false;
+        $rootScope.comunicationError = false;
         var email = this.user.email;
         var password = this.user.password;
         var passwordConfirmation =  this.user.passwordConf;
         var uFirstName = this.user.firstName;
         var uLastName = this.user.lastName;
         if(!email || !password || !uFirstName || uLastName || password != passwordConfirmation) {
-            $rootScope.notify("Please enter valid data");
+            $rootScope.emptySignupCredit = true;
             return false;
         }
+
         $rootScope.show('Please wait.. Registering');
         API.signup({
             email: email,
@@ -79,11 +82,11 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             $rootScope.hide();
             if(error.error && error.error.code == 11000)
             {
-                $rootScope.notify("A user with this email already exists");
+                $rootScope.existingEmail = true;
             }
             else
             {
-                $rootScope.notify("Oops something went wrong, Please try again!");
+                $rootScope.communicationError = true;
             }
             
         });
