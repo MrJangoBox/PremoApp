@@ -1,25 +1,26 @@
 angular.module('premoApp.controllers', ['premoApp.services'])
- 
+
 // Sign in controller
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
     // if the user is already logged in, take him to his PremoApp app
     if ($rootScope.isSessionActive()) {
         $window.location.href = ('#/base/list');
     }
- 
+
     $scope.user = {
         email: "",
         password: ""
     };
- 
+
     $rootScope.showMenuButton = function () {
                 return "false";
             };
-    
+
     $scope.validateUser = function () {
         $rootScope.userNoMatch = false;
         $rootScope.emptyLoginCredit = false;
         var email = this.user.email;
+        // $rootScope.emailTemp = this.user.email;
         var password = this.user.password;
         if(!email || !password) {
             $rootScope.emptyLoginCredit = true;
@@ -37,7 +38,7 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             $rootScope.hide();
         });
     }
- 
+
 })
 
 // Sign up controller
