@@ -5,6 +5,11 @@ angular.module('premoApp.services', [])
     // For local development
      var base = "http://localhost:9804";
 
+	if (ionic.Platform.isAndroid())
+	{
+		base = "http://192.168.0.196:9804";
+	}	
+	 
     // For online development
     //   var base = "http://sportpulse.herokuapp.com";
     

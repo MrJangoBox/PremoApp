@@ -5,6 +5,7 @@ var morgan      =   require('morgan');
 // Connection to DB: 1) Internal Mongo db, 2) External MongoLab db
 //var db  =   mongojs('sauveApp', ['appUsers','sauveAppLists']);
 
+//var db  =   mongojs('mongodb://localhost:27017/premoappdb', ['appUsers','premoAppLists']);
 var db  =   mongojs('mongodb://admin:password@ds145405.mlab.com:45405/premoappdb', ['appUsers','premoAppLists'], {authMechanism: 'ScramSHA1'});
 
 //console.log("WAZZA", db)
