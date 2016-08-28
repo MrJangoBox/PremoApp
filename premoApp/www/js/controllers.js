@@ -1,7 +1,31 @@
 angular.module('premoApp.controllers', ['premoApp.services'])
 
+// Navigation controller
+.controller('ionNavCtrl', function($rootScope, $scope, $location, $ionicSideMenuDelegate) {
+
+    console.log("location path: " + $location.path());
+
+    $scope.isActive = function() {
+        if($location.path() == "/auth/signin" || $location.path() == "/auth/signup") {
+            $ionicSideMenuDelegate.canDragContent(false);
+            return false;
+        } else {
+            $ionicSideMenuDelegate.canDragContent(true);
+            return true;
+        }
+    };
+
+    // $scope.goBack = function() {
+    //     $ionicHistory.goBack(-1);
+    // }
+
+    $rootScope.$broadcast('fetchAll');
+})
+
 // Sign in controller
-.controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
+.controller('SignInCtrl', function ($rootScope, $scope, API, $ionicSideMenuDelegate, $window) {
+    $scope.menuButtonsHidden = false;
+
     // if the user is already logged in, take him to his PremoApp app
     if ($rootScope.isSessionActive()) {
         $window.location.href = ('#/base/list');
@@ -19,9 +43,10 @@ angular.module('premoApp.controllers', ['premoApp.services'])
     $scope.validateUser = function () {
         $rootScope.userNoMatch = false;
         $rootScope.emptyLoginCredit = false;
+
         var email = this.user.email;
-        // $rootScope.emailTemp = this.user.email;
         var password = this.user.password;
+
         if(!email || !password) {
             $rootScope.emptyLoginCredit = true;
             return false;
@@ -51,10 +76,6 @@ angular.module('premoApp.controllers', ['premoApp.services'])
         lastName: ""
     };
 
-    $rootScope.showMenuButton = function () {
-                return "false";
-            };
- 
     $scope.createUser = function () {
         $rootScope.emptySignupCredit = false;
         $rootScope.existingEmail = false;
@@ -77,6 +98,7 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             lastName: uFirstName
         }).success(function (data) {
             $rootScope.setToken(email); // create a session kind of thing on the client side
+            $rootScope.sideMenu = true;
             $rootScope.hide();
             $window.location.href = ('#/base/list');
         }).error(function (error) {
@@ -95,35 +117,34 @@ angular.module('premoApp.controllers', ['premoApp.services'])
 })
 
 // Treatment list controller
-.controller('myListCtrl', function ($rootScope, $scope, API, $timeout, $ionicModal, $window) {
+.controller('myListCtrl', function ($rootScope, $scope, $ionicSideMenuDelegate, API, $timeout, $ionicModal, $window) {
     $rootScope.$on('fetchAll', function(){
-            API.getAll($rootScope.getToken()).success(function (data, status, headers, config) {
+            API.getAllEvents($rootScope.getToken()).success(function (data, status, headers, config) {
             $rootScope.show("Please wait... Processing");
             $scope.list = [];
-            $scope.categoriesLoaded = [];
+            $scope.itemsLoaded = [];
             for (var i = 0; i < data.length; i++) {
-                $scope.categoryExist = false;
+                $scope.eventExist = false;
                 
-                numOfCategories = $scope.categoriesLoaded.length;
-                console.log(numOfCategories);
+                numOfItems = $scope.itemsLoaded.length;
                 
-                if (numOfCategories == 0) {
-                        $scope.categoriesLoaded.push(data[i].category);
-                        console.log(data[i].category);
+                if (numOfItems == 0) {
+                        $scope.itemsLoaded.push(data[i].eventId);
+                        console.log(data[i].eventId);
                 }
-                
-                for (var j = 0; j < numOfCategories; j++) {    
+
+                for (var j = 0; j < numOfItems; j++) {    
                     
-                    if (data[i].category == $scope.categoriesLoaded[j])
+                    if (data[i].eventId == $scope.itemsLoaded[j])
                     {
-                        $scope.categoryExist = true;
+                        $scope.eventExist = true;
                     }
                 }
                 
-                if ($scope.categoryExist == false)
+                if ($scope.eventExist == false)
                 {
                     $scope.list.push(data[i]);
-                    $scope.categoriesLoaded.push(data[i].category);
+                    $scope.itemsLoaded.push(data[i].eventId);
                 }
             };
             if($scope.list.length == 0)
@@ -146,12 +167,14 @@ angular.module('premoApp.controllers', ['premoApp.services'])
                 return "true";
             };
  
-    $rootScope.selectCategory = function (category) {
+    $rootScope.selectEvent = function (eventId, eventName) {
+                console.log("ouchhh");
+                $rootScope.eventId = eventId
+                $rootScope.eventNameChosen = eventName
                 $window.location.href="#/base/category"
-                $rootScope.category = category
                 $scope.$broadcast("$destroy");
             };
-    
+
     $rootScope.$broadcast('fetchAll');
  
 })
@@ -159,13 +182,13 @@ angular.module('premoApp.controllers', ['premoApp.services'])
 // Category controller
 .controller('categoryCtrl', function ($rootScope, $scope, API, $timeout, $ionicModal, $window) {
     $rootScope.$on('fetchAll', function(){
-            API.getAllTopics($rootScope.getToken(),$rootScope.category).success(function (data, status, headers, config) {
+            API.getEventInfo($rootScope.getToken(),$rootScope.eventId).success(function (data, status, headers, config) {
             $rootScope.show("Please wait... Processing");
-            $scope.topicList = [];
+            $scope.eventInfos = [];
             for (var i = 0; i < data.length; i++) {
 //                Code example for when there is a need  to separate loading parameters
 //                if (data[i].isCompleted == false) {
-                    $scope.topicList.push(data[i]);
+                    $scope.eventInfos.push(data[i]);
 //                }
             };
             if($scope.list.length == 0)

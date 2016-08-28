@@ -3,7 +3,7 @@ module.exports = function (server, db) {
  
     server.get("/api/v1/premoApp/data/list", function (req, res, next) {
         validateRequest.validate(req, res, db, function () {
-            db.premoAppLists.find({
+            db.premoAppList.find({
                 
             },function (err, list) {
                 res.writeHead(200, {

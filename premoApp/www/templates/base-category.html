@@ -1,7 +1,7 @@
 <ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
    <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
        <div class="item item-divider title-center">
-           Categorie: {{category}}
+           Categorie: {{eventNameChosen}}
        </div>
 
     <br />
@@ -9,10 +9,10 @@
     
     <ion-list>
         <ion-item 
-            ng-repeat="item in topicList"
+            ng-repeat="item in eventInfos"
             ng-class="icon ion-ios7-arrow-forward"
-            ng-click="selectTopic('{{item.topic}}','{{item.content}}')">
-            {{item.topic}}
+            <!--ng-click="selectTopic('{{item.topic}}','{{item.content}}')">-->
+            {{item.locationInfo}}
 <!--            <i icon-right ng-class="icon ion-ios7-arrow-forward"></i>-->
         </ion-item>
     </ion-list>  

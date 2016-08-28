@@ -6,7 +6,7 @@ var morgan      =   require('morgan');
 //var db  =   mongojs('sauveApp', ['appUsers','sauveAppLists']);
 
 //var db  =   mongojs('mongodb://localhost:27017/premoappdb', ['appUsers','premoAppLists']);
-var db  =   mongojs('mongodb://admin:password@ds145405.mlab.com:45405/premoappdb', ['appUsers','premoAppLists'], {authMechanism: 'ScramSHA1'});
+var db  =   mongojs('mongodb://admin:password@ds145405.mlab.com:45405/premoappdb', ['appUsers','premoAppList'], {authMechanism: 'ScramSHA1'});
 
 //console.log("WAZZA", db)
 
@@ -31,4 +31,4 @@ server.listen(process.env.PORT || 9804, function () {
 
 // Js files to db collections links
 var manageUsers = require('./auth/manageUser')(server, db);
-var manageLists =   require('./premoAppList/managePremoAppList')(server, db);
+var manageLists = require('./premoAppList/managePremoAppList')(server, db);

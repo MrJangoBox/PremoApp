@@ -1,17 +1,17 @@
 angular.module('premoApp.services', [])
 
-.factory('API', function ($rootScope, $http, $ionicLoading, $window) {
+.factory('API', function ($rootScope, $http, $ionicLoading, $ionicSideMenuDelegate, $window) {
 
     // For local development
      var base = "http://localhost:9804";
 
+    // For online development
+    //   var base = "http://sportpulse.herokuapp.com";
+
 	if (ionic.Platform.isAndroid())
 	{
 		base = "http://192.168.0.196:9804";
-	}	
-	 
-    // For online development
-    //   var base = "http://sportpulse.herokuapp.com";
+	}
     
     $rootScope.show = function (text) {
         $rootScope.loading = $ionicLoading.show({
@@ -29,6 +29,7 @@ angular.module('premoApp.services', [])
 
     $rootScope.logout = function () {
         $rootScope.setToken("");
+        $ionicSideMenuDelegate.canDragContent(false);
         $window.location.href = '#/auth/signin';
     };
 
@@ -67,7 +68,7 @@ angular.module('premoApp.services', [])
         signup: function (form) {
             return $http.post(base+'/api/v1/premoApp/auth/register', form);
         },
-        getAll: function (email) {
+        getAllEvents: function (email) {
             return $http.get(base+'/api/v1/premoApp/data/list', {
                 method: 'GET',
                 params: {
@@ -75,7 +76,7 @@ angular.module('premoApp.services', [])
                 }
             });
         },
-        getAllTopics: function (email, category) {
+        getEventInfo: function (email, category) {
             return $http.get(base+'/api/v1/premoApp/data/topicList', {
                 method: 'GET',
                 params: {

@@ -11,23 +11,23 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
-    <!--<script src="node_modules/notifyjs/dist/notify.js"></script>-->
-    <!--<script type="text/javascript" src="node_modules/angular/angular.js"></script>-->
     <script type="text/javascript" src="node_modules/angular-growl-notifications/dist/angular-growl-notifications.js"></script>
   </head>
   <body>
-  <ion-side-menus>
+      <ion-side-menus ng-controller="ionNavCtrl">
           <!-- Center content -->
-          <ion-side-menu-content ng-controller="myListCtrl">
-          <growl-notifications></growl-notifications>
-            <ion-nav-bar class="bar-positive">
+          <ion-side-menu-content>
+              <growl-notifications></growl-notifications>
+              <ion-nav-bar class="bar-positive">
                 <ion-nav-buttons side="left">
-                    <ion-nav-button menu-toggle="left" class="button button-icon icon ion-navicon"></ion-nav-button>
+                    <ion-nav-button menu-toggle="left" class="button button-icon icon ion-navicon" ng-show="isActive()"></ion-nav-button>
                     <h1 class="title">Premo</h1>
-                    <ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
                 </ion-nav-buttons>
-            </ion-nav-bar>
-            <ion-nav-view></ion-nav-view>
+                <!--<ion-nav-buttons side="right">-->
+                  <!--<button class="button button-icon button-clear ion-arrow-left-c" ng-click="goBack()" ng-show="isActive()"></button>-->
+                <!--</ion-nav-buttons>-->
+              </ion-nav-bar>
+              <ion-nav-view></ion-nav-view>
           </ion-side-menu-content>
           <!-- Left menu -->
           <ion-side-menu side="left">
@@ -36,13 +36,13 @@
               </a>
               <ion-content class="has-header">
                 <ion-list>
-                  <ion-item class="item-icon-left" nav-clear menu-close ng-click="logout()">
+                  <ion-item class="item-icon-left" nav-clear menu-close ng-click="logout(); hideMenu()">
                     <i class="icon ion-ios7-locked"></i>
                     Sign Out
                   </ion-item>
                 </ion-list>
               </ion-content>
-      </ion-side-menu>
+          </ion-side-menu>
       </ion-side-menus>
   </body>
 </html>
