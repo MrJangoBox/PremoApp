@@ -34,5 +34,6 @@
     <plugin name="cordova-plugin-console" spec="~1.0.3" />
     <plugin name="cordova-plugin-device" spec="~1.1.2" />
     <plugin name="cordova-plugin-splashscreen" spec="~3.2.2" />
+    <plugin name="org.apache.cordova.geolocation" spec="0.3.10" source="pgb" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
 </widget>

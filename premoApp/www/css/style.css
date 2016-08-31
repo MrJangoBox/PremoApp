@@ -1,6 +1,6 @@
 .margin {
-    margin - left: 9px;
-    margin - right: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 .icon-actions {
     font-size: 23px;
@@ -34,4 +34,30 @@ growl-notifications growl-notification {
     display: block;
     border-radius: 5px;
     margin-top: 15px;
+}
+
+.tabs-icon-top,
+.tabs-icon-top .tab,
+.tabs-icon-top .tab .nav-view-home {
+    color: #1f3f7e;
+}
+
+.tabs-icon-top .tab {
+    color: #1f3f7e;
+}
+.tabColour {
+    color: #1f3f7e;
+}
+
+.tabs-icon-top .nav-view-home {
+    color: #1f3f7e;
+}
+
+.scroll {
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
 }

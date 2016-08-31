@@ -1,4 +1,4 @@
-angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services', 'growlNotifications'])
+angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services', 'growlNotifications', 'ngCordova'])
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {
@@ -10,6 +10,11 @@ angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services'
     
     // All the paths of the different application views and related controllers
     .config(function ($stateProvider, $urlRouterProvider) {
+        // uiGmapGoogleMapApiProvider.configure({
+        //     //    key: 'your api key',
+        //     v: '3.20', //defaults to latest 3.X anyhow
+        //     libraries: 'weather,geometry,visualization'
+        // })
         $stateProvider
             .state('auth', {
                 url: "/auth",
@@ -54,6 +59,15 @@ angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services'
                     'base-list': {
                         templateUrl: 'templates/base-category.html',
                         controller: 'categoryCtrl'
+                    }
+                }
+            })
+            .state('base.map', {
+                url: '/map',
+                views: {
+                    'base-map': {
+                        templateUrl: 'templates/base-map.html',
+                        controller: 'mapCtrl'
                     }
                 }
             })
