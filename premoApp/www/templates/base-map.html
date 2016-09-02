@@ -1,6 +1,11 @@
 <ion-view>
     <ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
         <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
+
+        <div class="item item-divider title-center">
+            Events Map
+        </div>
+        <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
         <div id="map" data-tap-disabled="true"></div>
     </ion-content>
 </ion-view>

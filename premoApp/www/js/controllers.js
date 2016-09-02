@@ -24,9 +24,7 @@ angular.module('premoApp.controllers', ['premoApp.services'])
 
 // Sign in controller
 .controller('SignInCtrl', function ($rootScope, $scope, API, $ionicSideMenuDelegate, $window) {
-    // $scope.menuButtonsHidden = false;
-
-    // if the user is already logged in, take him to his PremoApp app
+    // if the user is already logged in, take him to his Event Lit
     if ($rootScope.isSessionActive()) {
         $window.location.href = ('#/base/list');
     }
@@ -35,10 +33,6 @@ angular.module('premoApp.controllers', ['premoApp.services'])
         email: "",
         password: ""
     };
-
-    // $rootScope.showMenuButton = function () {
-    //             return "false";
-    //         };
 
     $scope.validateUser = function () {
         $rootScope.userNoMatch = false;
@@ -125,15 +119,15 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             $scope.itemsLoaded = [];
             for (var i = 0; i < data.length; i++) {
                 $scope.eventExist = false;
-                
-                numOfItems = $scope.itemsLoaded.length;
+
+                var numOfItems = $scope.itemsLoaded.length;
                 
                 if (numOfItems == 0) {
                         $scope.itemsLoaded.push(data[i].eventId);
                         console.log(data[i].eventId);
                 }
 
-                for (var j = 0; j < numOfItems; j++) {    
+                for (var j = 0; j < numOfItems; j++) {
                     
                     if (data[i].eventId == $scope.itemsLoaded[j])
                     {
@@ -227,46 +221,54 @@ angular.module('premoApp.controllers', ['premoApp.services'])
 })
 
 // Map controller
-.controller('mapCtrl', function ($rootScope, $scope, $state, $cordovaGeolocation) {
+.controller('mapCtrl', function ($rootScope, API, $scope, $state, $cordovaGeolocation) {
+    $rootScope.$on('fetchAll', function(){
+        API.getAllEvents($rootScope.getToken()).success(function (data, status, headers, config) {
+            var options = {timeout: 10000, enableHighAccuracy: true};
 
-    var options = {timeout: 10000, enableHighAccuracy: true};
+            $cordovaGeolocation.getCurrentPosition(options).then(function(position){
 
-    $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+                var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-        var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                var mapOptions = {
+                    center: latLng,
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
 
-        var mapOptions = {
-            center: latLng,
-            zoom: 15,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
+                $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-        $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                //Wait until the map is loaded
+                google.maps.event.addListenerOnce($scope.map, 'idle', function(){
 
-        //Wait until the map is loaded
-        google.maps.event.addListenerOnce($scope.map, 'idle', function(){
+                    var marker = new google.maps.Marker({
+                        map: $scope.map,
+                        animation: google.maps.Animation.DROP,
+                        position: latLng
+                    });
 
-            var marker = new google.maps.Marker({
-                map: $scope.map,
-                animation: google.maps.Animation.DROP,
-                position: latLng
+                    console.log("Location parameter: " + latLng + " type: " + typeof latLng);
+                    console.log("Latitude parameter: " + position.coords.latitude + " type of longitude: " + typeof position.coords.longitude);
+
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: "Here I am!"
+                    });
+
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infoWindow.open($scope.map, marker);
+                    });
+
+                });
+
+            }, function(error){
+                console.log("Could not get location");
             });
 
-            // console.log("Location parameter: " + latLng + " type: " + typeof latLng);
-            // console.log("Latitude parameter: " + position.coords.latitude + " type of longitude: " + typeof position.coords.longitude);
-
-            var infoWindow = new google.maps.InfoWindow({
-                content: "Here I am!"
-            });
-
-            google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.open($scope.map, marker);
-            });
-
+            $rootScope.hide();
+        }).error(function (data, status, headers, config) {
+            $rootScope.hide();
+            $rootScope.notify("Oops something went wrong!! Please try again later");
         });
-
-    }, function(error){
-        console.log("Could not get location");
     });
 
     $rootScope.$broadcast('fetchAll');

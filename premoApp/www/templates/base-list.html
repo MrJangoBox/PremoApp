@@ -1,23 +1,22 @@
 <ion-view>
-<ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
-   <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
-    
-   <div class="item item-divider title-center">
-           Events
-       <!--{{emailTemp}}-->
-   </div>
-    
-   <ion-list>
-        <ion-item 
-            ng-repeat="item in list"
-            class="item item-icon-left item-icon-right"
-            ng-click="selectEvent('{{item.eventId}}', '{{item.eventName}}')">
-            {{item.eventName}}
-            <br />
-            {{item.content}}
-            <i class="icon ion-chevron-right"></i>
-        </ion-item>
-    </ion-list>    
-   </div>
-</ion-content>
+    <ion-content class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
+       <ion-refresher ng-hide="noData" on-refresh="doRefresh('1')"></ion-refresher>
+
+       <div class="item item-divider title-center">
+               Events
+           <!--{{emailTemp}}-->
+       </div>
+
+       <ion-list>
+            <ion-item
+                ng-repeat="item in list"
+                class="item item-icon-left item-icon-right"
+                ng-click="selectEvent('{{item.eventId}}', '{{item.eventName}}')">
+                {{item.eventName}}
+                <br />
+                {{item.content}}
+                <i class="icon ion-chevron-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-view>
