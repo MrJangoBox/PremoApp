@@ -75,7 +75,7 @@ angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services'
                 url: '/topic',
                 views: {
                     'base-list': {
-                        templateUrl: 'templates/base-topic.html',
+                        templateUrl: 'templates/base-addevent.html',
                         controller: 'categoryCtrl'
                     }
                 }

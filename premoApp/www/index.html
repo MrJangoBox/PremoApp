@@ -25,9 +25,10 @@
                     <ion-nav-button menu-toggle="left" class="button button-icon icon ion-navicon" ng-show="isActive()"></ion-nav-button>
                     <h1 class="title">Premo</h1>
                 </ion-nav-buttons>
-                <!--<ion-nav-buttons side="right">-->
+                <ion-nav-buttons side="right">
                   <!--<button class="button button-icon button-clear ion-arrow-left-c" ng-click="goBack()" ng-show="isActive()"></button>-->
-                <!--</ion-nav-buttons>-->
+                    <ion-nav-button menu-toggle="right" class="button button-icon icon ion-plus" ng-click="addEvent()" ng-show="onListView()"></ion-nav-button>
+                </ion-nav-buttons>
               </ion-nav-bar>
               <ion-nav-view></ion-nav-view>
           </ion-side-menu-content>

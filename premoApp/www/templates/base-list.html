@@ -11,10 +11,12 @@
             <ion-item
                 ng-repeat="item in list"
                 class="item item-icon-left item-icon-right"
-                ng-click="selectEvent('{{item.eventId}}', '{{item.eventName}}')">
-                {{item.eventName}}
+                <!--ng-click="selectEvent('{{item.eventId}}', '{{item.eventName}}')"-->
+                {{item.itemName}}
                 <br />
-                {{item.content}}
+                {{item.itemDescription}}
+                <br /><br />
+                <p><h2>Located at:</h2>  {{item.itemLatitude}}, {{item.itemLongitude}}</p>
                 <i class="icon ion-chevron-right"></i>
             </ion-item>
         </ion-list>

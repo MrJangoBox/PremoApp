@@ -84,6 +84,14 @@ angular.module('premoApp.services', [])
                     category: category
                 }
             });
+        },
+        saveItem: function (form, email) {
+            return $http.post(base+'/api/v1/premoApp/data/item', form, {
+                method: 'POST',
+                params: {
+                    token: email
+                }
+            });
         }
     }
 });

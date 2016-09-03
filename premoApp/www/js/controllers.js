@@ -1,9 +1,9 @@
 angular.module('premoApp.controllers', ['premoApp.services'])
 
 // Navigation controller
-.controller('ionNavCtrl', function($rootScope, $scope, $location, $ionicSideMenuDelegate) {
+.controller('ionNavCtrl', function($rootScope, $scope, $location, $ionicSideMenuDelegate, $ionicModal) {
 
-    console.log("location path: " + $location.path());
+    // console.log("location path: " + $location.path());
 
     $scope.isActive = function() {
         if($location.path() == "/auth/signin" || $location.path() == "/auth/signup") {
@@ -13,6 +13,22 @@ angular.module('premoApp.controllers', ['premoApp.services'])
             $ionicSideMenuDelegate.canDragContent(true);
             return true;
         }
+    };
+
+    $scope.onListView = function() {
+        if($location.path() == "/base/list") {
+            return true;
+        } else {
+            return false;
+        }
+    };
+
+    $ionicModal.fromTemplateUrl('templates/base-addevent.html', function (modal) {
+        $scope.newTemplate = modal;
+    });
+
+    $scope.addEvent = function () {
+        $scope.newTemplate.show();
     };
 
     // $scope.goBack = function() {
@@ -110,56 +126,27 @@ angular.module('premoApp.controllers', ['premoApp.services'])
     }
 })
 
-// Treatment list controller
+// Event list controller
 .controller('myListCtrl', function ($rootScope, $scope, $ionicSideMenuDelegate, API, $timeout, $ionicModal, $window) {
     $rootScope.$on('fetchAll', function(){
             API.getAllEvents($rootScope.getToken()).success(function (data, status, headers, config) {
             $rootScope.show("Please wait... Processing");
             $scope.list = [];
-            $scope.itemsLoaded = [];
             for (var i = 0; i < data.length; i++) {
-                $scope.eventExist = false;
-
-                var numOfItems = $scope.itemsLoaded.length;
-                
-                if (numOfItems == 0) {
-                        $scope.itemsLoaded.push(data[i].eventId);
-                        console.log(data[i].eventId);
-                }
-
-                for (var j = 0; j < numOfItems; j++) {
-                    
-                    if (data[i].eventId == $scope.itemsLoaded[j])
-                    {
-                        $scope.eventExist = true;
-                    }
-                }
-                
-                if ($scope.eventExist == false)
-                {
-                    $scope.list.push(data[i]);
-                    $scope.itemsLoaded.push(data[i].eventId);
-                }
+                $scope.list.push(data[i]);
             };
             if($scope.list.length == 0)
             {
                 $scope.noData = true;
-            }
-            else
-            {
+            } else {
                 $scope.noData = false;
             }
-                
             $rootScope.hide();
         }).error(function (data, status, headers, config) {
             $rootScope.hide();
             $rootScope.notify("Oops something went wrong!! Please try again later");
         });
     });
-    
-    // $rootScope.showMenuButton = function () {
-    //             return "true";
-    //         };
 
     $rootScope.selectEvent = function (eventId, eventName) {
                 console.log("ouchhh");
@@ -218,6 +205,60 @@ angular.module('premoApp.controllers', ['premoApp.services'])
     
     $rootScope.$broadcast('fetchAll');
  
+})
+
+// Treatment list controller
+.controller('addEventCtrl', function ($rootScope, $scope, $ionicSideMenuDelegate, API, $timeout, $ionicModal, $window) {
+    // $rootScope.$on('fetchAll', function(){
+    //     API.getAllEvents($rootScope.getToken()).success(function (data, status, headers, config) {
+            $scope.data = {
+                itemName: "",
+                itemDescription: "",
+                itemLatitude: 0,
+                itemLongitude: 0
+            };
+
+            $scope.close = function () {
+                $scope.modal.hide();
+            };
+
+            $scope.createNew = function () {
+                var itemName = this.data.itemName;
+                var itemDescription = this.data.itemDescription;
+                var itemLatitude = this.data.itemLatitude;
+                var itemLongitude = this.data.itemLongitude;
+                if (!itemName) return;
+                $scope.modal.hide();
+                $rootScope.show();
+
+                $rootScope.show("Please wait... Creating new");
+
+                var form = {
+                    itemName: itemName,
+                    itemDescription: itemDescription,
+                    itemLatitude: itemLatitude,
+                    itemLongitude: itemLongitude,
+                    user: $rootScope.getToken(),
+                    created: Date.now(),
+                    updated: Date.now()
+                }
+
+                API.saveItem(form, form.user)
+                    .success(function (data, status, headers, config) {
+                        $rootScope.hide();
+                        $rootScope.doRefresh(1);
+                    })
+                    .error(function (data, status, headers, config) {
+                        $rootScope.hide();
+                        $rootScope.notify("Oops something went wrong!! Please try again later");
+                    });
+            };
+    //     }).error(function (data, status, headers, config) {
+    //         $rootScope.hide();
+    //         $rootScope.notify("Oops something went wrong!! Please try again later");
+    //     });
+    // });
+
 })
 
 // Map controller
