@@ -89,5 +89,17 @@ angular.module('premoApp', ['ionic', 'premoApp.controllers', 'premoApp.services'
                     }
                 }
             })
+
+            //  base-profile Hrishi
+
+            .state('base.profile', {
+                url: '/profile',
+                views: {
+                    'base-profile': {
+                        templateUrl: 'templates/base-profile.html',
+                        controller: 'myListCtrl'
+                    }
+                }
+            })
         $urlRouterProvider.otherwise('/auth/signin');
     });
